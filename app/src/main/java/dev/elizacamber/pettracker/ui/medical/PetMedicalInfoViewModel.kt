@@ -1,4 +1,4 @@
-package dev.elizacamber.pettracker.ui
+package dev.elizacamber.pettracker.ui.medical
 
 import androidx.lifecycle.ViewModel
 

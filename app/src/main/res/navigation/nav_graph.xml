@@ -31,7 +31,7 @@
         tools:layout="@layout/pet_details_fragment" />
     <fragment
         android:id="@+id/petMedicalInfoFragment"
-        android:name="dev.elizacamber.pettracker.ui.PetMedicalInfoFragment"
+        android:name="dev.elizacamber.pettracker.ui.medical.PetMedicalInfoFragment"
         android:label="pet_medical_info_fragment"
         tools:layout="@layout/pet_medical_info_fragment" />
     <fragment
