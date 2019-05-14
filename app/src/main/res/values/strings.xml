@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pet Tracker</string>
+
+    <string name="main_details">Pet Details</string>
+    <string name="main_stats">Stats</string>
+    <string name="main_reminders">Reminders</string>
+    <string name="main_medical">Medical info</string>
+</resources>

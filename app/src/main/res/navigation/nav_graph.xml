@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="dev.elizacamber.pettracker.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment"
+        app:defaultNavHost="true">
+        <action
+            android:id="@+id/action_mainFragment_to_petDetailsFragment"
+            app:destination="@id/petDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_petMedicalInfoFragment"
+            app:destination="@id/petMedicalInfoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_petStatsFragment"
+            app:destination="@id/petStatsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_remindersFragment"
+            app:destination="@id/remindersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petDetailsFragment"
+        android:name="dev.elizacamber.pettracker.ui.details.PetDetailsFragment"
+        android:label="pet_details_fragment"
+        tools:layout="@layout/pet_details_fragment" />
+    <fragment
+        android:id="@+id/petMedicalInfoFragment"
+        android:name="dev.elizacamber.pettracker.ui.PetMedicalInfoFragment"
+        android:label="pet_medical_info_fragment"
+        tools:layout="@layout/pet_medical_info_fragment" />
+    <fragment
+        android:id="@+id/petStatsFragment"
+        android:name="dev.elizacamber.pettracker.ui.stats.PetStatsFragment"
+        android:label="pet_stats_fragment"
+        tools:layout="@layout/pet_stats_fragment" />
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="dev.elizacamber.pettracker.ui.reminders.RemindersFragment"
+        android:label="reminders_fragment"
+        tools:layout="@layout/reminders_fragment" />
+</navigation>
