@@ -28,7 +28,12 @@
         android:id="@+id/petDetailsFragment"
         android:name="dev.elizacamber.pettracker.ui.details.PetDetailsFragment"
         android:label="pet_details_fragment"
-        tools:layout="@layout/pet_details_fragment" />
+        tools:layout="@layout/pet_details_fragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://pettracker.elizacamber.dev/details"
+            android:autoVerify="true" />
+    </fragment>
     <fragment
         android:id="@+id/petMedicalInfoFragment"
         android:name="dev.elizacamber.pettracker.ui.medical.PetMedicalInfoFragment"
